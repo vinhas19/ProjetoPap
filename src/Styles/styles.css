@@ -1,0 +1,249 @@
+html,
+body {
+    background-color: #080808;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.header {
+    text-align: center;
+    size: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.header .menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    flex: 1;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 16px;
+    margin: 0 15px;
+}
+
+.header a:hover {
+    color: #bbb;
+}
+
+.header .logo img {
+    width: 140px;
+    height: 90px;
+    align-items: center;
+}
+
+.header .profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #575757;
+    cursor: pointer;
+}
+
+.navigation-bar-a {
+    margin-right: 130px;
+    size: 2em;
+    display: flex;
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.main-content .logo img {
+    width: 500px;
+    height: 300px;
+}
+
+.main-content .generate-button {
+    background-color: #00cc00;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.main-content .generate-button:hover {
+    background-color: #009900;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #575757;
+}
+
+.footer {
+    width: 0em;
+    bottom: 3;
+    left: 3;
+    text-align: center;
+    background-color: #f80000;
+}
+
+.hm-class {
+    font-size: 2em;
+    width: 100%;
+    height: 100%;
+}
+
+#logo-hp {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 20em;
+    align-items: center;
+}
+
+#btn-hp {
+    background: #3F8E00;
+    width: 15em;
+    height: 5em;
+    cursor: pointer;
+    box-shadow: 0px 8px 20px #62BA1B;
+    color: white;
+    align-items: center;
+}
+
+#btn-tp {
+    margin-top: 7em;
+    background: #3F8E00;
+    width: 15em;
+    height: 4em;
+    cursor: pointer;
+    box-shadow: 0px 8px 20px #62BA1B;
+    color: white;
+}
+
+#btn-tp:hover {
+    background-color: #62BA1B;
+}
+
+#progress-id {
+    margin-top: 1em;
+    width: 80%;
+    border-radius: 1em;
+}
+
+#id
+{
+	background-image: url(../Assets/Images/background.png) !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#midground, #foreground {
+    padding: 20px; 
+    position: relative;
+}
+#content {
+    position: relative;
+    z-index: 1;
+}
+
+.inventory-page {
+    margin-top: 1em;
+    min-width: 80em;
+    max-width: 108em;
+    color:white;
+    padding: 20px;
+    background: rgba( 255, 255, 255, 0.25 ) !important;
+    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.player-image{
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+
+}
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+.item-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 9em;
+    gap: 20px;
+}
+.BoxTeam{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 90%;
+    height: 17vh;
+}
+
+.box-trophy{
+    width: 4em;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.small-card {
+    transform: scale(0.8); /* or any other size reduction you want */
+  }
+
+/*Não mexer*/
+.glass 
+{
+    background: rgba( 255, 255, 255, 0.1 ) !important;
+    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+}
+
+.glass-dark
+{
+    background: rgba( 0, 0, 0, 0.2 ) !important;
+    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 2em;
+}
+
+.opacity-50
+{
+    opacity: 50%;
+}
