@@ -1,7 +1,18 @@
 import React from 'react';
-import { Box, Text, Button, Flex, HStack } from '@chakra-ui/react';
+import {
+  Box,
+  Text,
+  Button,
+  Flex,
+  HStack,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+} from '@chakra-ui/react';
 import { FiInfo } from "react-icons/fi";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 
 const Footer = () => {
   return (
@@ -14,6 +25,7 @@ const Footer = () => {
       py={3}
     >
       <Flex justify="space-between" align="center">
+        {/* Left Side Content */}
         <Box className="glass" padding="1em">
           <HStack spacing={2} align="center">
             <FiInfo size={18} />
@@ -23,11 +35,36 @@ const Footer = () => {
           </HStack>
           <Text fontSize="sm">Register now.</Text>
         </Box>
+
+        {/* Right Side Help Button with Menu */}
         <HStack spacing={2} align="center">
-          <Button className="glass" size="sm" color="white" display="flex" alignItems="center">
-            <AiOutlineQuestionCircle size={18} style={{ marginRight: "8px" }} />
-            Help
-          </Button>
+          <Menu placement="top-end" >
+            <MenuButton
+              as={Button}
+              className="glass"
+              size="sm"
+              color="white"
+              display="flex"
+              alignItems="center"
+              rightIcon={<ChevronDownIcon />}
+            >
+              <HStack spacing={2}>
+                <AiOutlineQuestionCircle size={18} />
+                <Text>Help</Text>
+              </HStack>
+            </MenuButton>
+            <MenuList>
+              <MenuItem onClick={() => window.location.href = "/info"}>
+                Information
+              </MenuItem>
+              <MenuItem onClick={() => window.location.href = "/faqs"}>
+                FAQs
+              </MenuItem>
+              <MenuItem onClick={() => window.location.href = "/support"}>
+                Support
+              </MenuItem>
+            </MenuList>
+          </Menu>
         </HStack>
       </Flex>
     </Box>
