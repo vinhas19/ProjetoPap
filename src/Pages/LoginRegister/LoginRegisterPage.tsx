@@ -71,6 +71,7 @@ const LoginRegister = () => {
       mx="auto"
       mt="10%"
       textAlign="center"
+      filter="blur"
     >
       <Heading size="lg" color="white" mb="4">
         {isRegistering ? 'Register' : 'Login'}
@@ -117,7 +118,7 @@ const LoginRegister = () => {
           {isRegistering ? 'Register' : 'Login'}
         </Button>
         <Text color="gray.400">
-          {isRegistering ? 'Já tem uma conta?' : 'Ainda não tem uma conta?'}{' '}
+          {isRegistering ? 'Already have an account?' : "Don't have an account yet?"}{' '}
           <Button
             variant="link"
             colorScheme="blue"

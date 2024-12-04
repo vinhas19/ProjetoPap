@@ -5,16 +5,18 @@ import {
   theme,
 } from "@chakra-ui/react"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import HomePage from "./Pages/Home/HomePage"
-
 import Header from "./Components/Header/Header"
 import Body from "./Components/Body/Body"
 import Footer from "./Components/Footer/Footer"
 import bg from './Assets/Images/background.png';
 import SchedulePage from "./Pages/Shedule/SchedulePage";
 import LoginRegisterPage from "./Pages/LoginRegister/LoginRegisterPage";
-{/*import ProfilePage from "./Pages/Profile/ProfilePage";*/}
+import FAQsPage from "./Pages/FAQs/FAQsPage";
+import InfoPage from "./Pages/Info/InfoPage";
+import SupportPage from "./Pages/Support/SupportPage";
+
 
 
 
@@ -29,7 +31,10 @@ export const App = () => (
             <Routes>
               <Route path="/" element={<HomePage/>}/>
               <Route path="/Schedule" element={<SchedulePage/>}/>
-              <Route path="/LoginRegister" element={<LoginRegisterPage/>}/> 
+              <Route path="/Sign" element={<LoginRegisterPage/>}/> 
+              <Route path="/Info" element={<InfoPage/>} />
+              <Route path="/Faqs" element={<FAQsPage/>} />
+              <Route path="/Support" element={<SupportPage/>} />
             </Routes>
           </BrowserRouter>
           <Spacer h="100%"/>

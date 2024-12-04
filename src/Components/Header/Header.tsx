@@ -1,18 +1,17 @@
 import React from 'react';
-import { Box, Image, Link, HStack, BoxProps } from '@chakra-ui/react';
+import { Box, Image, Link, HStack, Button, BoxProps } from '@chakra-ui/react';
 import Lb from '../../Assets/LogoBranco.png';
 import pf from '../../Assets/Profile.png';
 
 const Header: React.FC<BoxProps> = (props) => {
-  // Verifica se o usuário está logado com base no token armazenado
   const isLoggedIn = Boolean(localStorage.getItem('token'));
 
   return (
     <Box
       as="nav"
-      className="header glass"
-      maxW="90%"
-      w="90%"
+      className="header"
+      maxW="100%"
+      w="100%"
       mx="auto"
       px="1em"
       borderRadius="15px"
@@ -26,37 +25,40 @@ const Header: React.FC<BoxProps> = (props) => {
         </Link>
       </Box>
 
-      {/* Menu */}
-      <HStack spacing={8} className="menu">
-        <Link href="/SchedulePage" className="navigation-bar-a" _hover={{ color: 'gray.400' }}>
-          Schedule
-        </Link>
-      </HStack>
-
       {/* Ícone de perfil ou botões */}
       <Box marginLeft="auto" className="user-actions">
         {isLoggedIn ? (
-          // Ícone de perfil
           <Link href="/profile" className="navigation-bar-a" _hover={{ color: 'gray.400' }}>
             <Image src={pf} boxSize="40px" width="45px" alt="Profile" />
           </Link>
         ) : (
-          // Botões de Login e Register
-          <HStack spacing={4} className="button-container">
-            <Link
-              href="/LoginRegister" // Redireciona para a página de login
-              className="login-button"
+          <HStack spacing={1} className="button-container">
+            <Button
+              as={Link}
+              href="/LoginRegister"
               color="black"
+              bg="gray.200"
+              _hover={{ bg: 'gray.300' }}
+              borderRadius="40px"
+              px={6}
+              py={2}
+              fontSize="md"
             >
               Login
-            </Link>
-            <Link
-              href="/LoginRegister" // Redireciona para a página de registro
-              className="register-button"
-              _hover={{ color: 'gray.400' }}
+            </Button>
+            <Button
+              as={Link}
+              href="/LoginRegister"
+              color="white"
+              bg="black"
+              _hover={{ bg: 'gray.800' }}
+              borderRadius="40px"
+              px={6}
+              py={2}
+              fontSize="md"
             >
               Register
-            </Link>
+            </Button>
           </HStack>
         )}
       </Box>

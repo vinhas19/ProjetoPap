@@ -6,4 +6,5 @@ export default function Body(props:StackProps)
     return <VStack w="100%" h={h} maxW="100%" maxH={h} {...props}>
         {props.children}
     </VStack>
+    
 }

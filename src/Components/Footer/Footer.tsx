@@ -41,26 +41,26 @@ const Footer = () => {
           <Menu placement="top-end" >
             <MenuButton
               as={Button}
-              className="glass"
+              className="glass-nob"
               size="sm"
               color="white"
               display="flex"
               alignItems="center"
               rightIcon={<ChevronDownIcon />}
             >
-              <HStack spacing={2}>
+              <HStack spacing={2} >
                 <AiOutlineQuestionCircle size={18} />
                 <Text>Help</Text>
               </HStack>
             </MenuButton>
-            <MenuList>
-              <MenuItem onClick={() => window.location.href = "/info"}>
+            <MenuList className="glass-nob" >
+              <MenuItem onClick={() => window.location.href = "/info"} className="glass-nob">
                 Information
               </MenuItem>
-              <MenuItem onClick={() => window.location.href = "/faqs"}>
+              <MenuItem onClick={() => window.location.href = "/faqs"} className="glass-nob">
                 FAQs
               </MenuItem>
-              <MenuItem onClick={() => window.location.href = "/support"}>
+              <MenuItem onClick={() => window.location.href = "/support"} className="glass-nob">
                 Support
               </MenuItem>
             </MenuList>
