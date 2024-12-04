@@ -38,8 +38,8 @@ body {
 }
 
 .header .logo img {
-    width: 140px;
-    height: 90px;
+    width: 90px;
+    height: 60px;
     align-items: center;
 }
 
@@ -67,24 +67,18 @@ body {
 }
 
 .main-content .logo img {
-    width: 500px;
-    height: 300px;
+    width: 40px;
+    height: 30px;
 }
 
-.main-content .generate-button {
-    background-color: #00cc00;
-    color: #ffffff;
-    border: none;
-    padding: 15px 30px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    text-decoration: none;
+.LogoSS {
+    width: 40px;
+    height: 40px;
+
 }
 
-.main-content .generate-button:hover {
-    background-color: #009900;
-}
+
+
 
 .menu a {
     color: white;
@@ -157,7 +151,7 @@ body {
     background-attachment: fixed !important;
     background-size: cover !important;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -172,57 +166,7 @@ body {
     z-index: 1;
 }
 
-.inventory-page {
-    margin-top: 1em;
-    min-width: 80em;
-    max-width: 108em;
-    color:white;
-    padding: 20px;
-    background: rgba( 255, 255, 255, 0.25 ) !important;
-    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-.player-image{
-    align-items: center;
-    align-self: center;
-    align-content: center;
-    text-align: center;
 
-}
-.item-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-    gap: 20px; 
-}
-
-.item-card{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 9em;
-    gap: 20px;
-}
-.BoxTeam{
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    width: 90%;
-    height: 17vh;
-}
-
-.box-trophy{
-    width: 4em;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-}
-
-.small-card {
-    transform: scale(0.8); /* or any other size reduction you want */
-  }
 
 /*Não mexer*/
 .glass 

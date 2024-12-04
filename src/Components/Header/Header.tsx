@@ -9,16 +9,16 @@ const Header: React.FC<BoxProps> = (props) => {
     <Box as="nav" className="header glass" maxW="90%" w="90%" mx="auto" px="1em"  borderRadius="15px" h="4.5em" {...props}>
       <Box className="logo">
       <Link href="/" className="navigation-bar-a" _hover={{ color: 'gray.400' }}>
-        <Image src={Lb} alt="NFUT Logo" boxSize="90px" width="200px"/>
+        <Image src={Lb} alt="LogoSS" boxSize="90px" width="200px"/>
         </Link>
       </Box>
       <HStack spacing={8} className="menu">
         
         
-        {/* <Link href="/Inventory" className="navigation-bar-a" _hover={{ color: 'gray.400' }}>
-          Inventory
+        <Link href="/SchedulePage" className="navigation-bar-a" _hover={{ color: 'gray.400' }}>
+          Schedule
         </Link>
-        */}
+        
 
 
       </HStack>
