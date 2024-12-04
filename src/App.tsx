@@ -13,6 +13,8 @@ import Body from "./Components/Body/Body"
 import Footer from "./Components/Footer/Footer"
 import bg from './Assets/Images/background.png';
 import SchedulePage from "./Pages/Shedule/SchedulePage";
+import LoginRegisterPage from "./Pages/LoginRegister/LoginRegisterPage";
+{/*import ProfilePage from "./Pages/Profile/ProfilePage";*/}
 
 
 
@@ -27,6 +29,7 @@ export const App = () => (
             <Routes>
               <Route path="/" element={<HomePage/>}/>
               <Route path="/Schedule" element={<SchedulePage/>}/>
+              <Route path="/LoginRegister" element={<LoginRegisterPage/>}/> 
             </Routes>
           </BrowserRouter>
           <Spacer h="100%"/>

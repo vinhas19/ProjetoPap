@@ -47,15 +47,14 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #575757;
     cursor: pointer;
 }
 
 .navigation-bar-a {
-    margin-right: 130px;
     size: 2em;
     display: flex;
     text-align: center;
+    align-items: center;
 }
 
 .main-content {
@@ -190,4 +189,42 @@ body {
 .opacity-50
 {
     opacity: 50%;
+}
+
+
+
+/* Container para os botões */
+.button-container {
+  display: flex;
+  gap: 10px; /* Espaço entre os botões */
+}
+
+/* Estilo do botão Login */
+.login-button {
+  background-color: #2C2C2C; 
+  color: white;/* Cor cinza clara */
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #d0d0d0; /* Efeito de hover */
+}
+
+/* Estilo do botão Register */
+.register-button {
+  background-color: #2C2C2C;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background-color: #333333; /* Efeito de hover */
 }
