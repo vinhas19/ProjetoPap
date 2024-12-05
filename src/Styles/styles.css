@@ -209,27 +209,32 @@ body {
 
 /* Estilo do botão Login */
 .login-button {
-  background-color: #2C2C2C; 
-  color: white;/* Cor cinza clara */
-  border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
+    background-color: white; 
+    color: black !important;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none; 
 }
-
+  
 
 /* Estilo do botão Register */
 .register-button {
   background-color: #2C2C2C;
   color: white;
   border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
+  border-radius: 200px;
+  padding: 100px 20px;
+  font-size: 106px;
   cursor: pointer;
 }
 
+.login-button:hover{
+    opacity: 0.8;
+}
+
 .register-button:hover .login-button:hover{
-  background-color: #333333; /* Efeito de hover */
+  background-color: #333333; /* Efeito de    hover */
 }
