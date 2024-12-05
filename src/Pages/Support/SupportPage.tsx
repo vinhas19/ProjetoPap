@@ -17,7 +17,7 @@ const SupportPage = () => {
     // Verifique se todos os campos foram preenchidos
     if (!name || !email || !message) {
       toast({
-        title: 'Por favor, preencha todos os campos!',
+        title: 'Please fill in all fields!',
         status: 'error',
         duration: 3000,
         isClosable: true,
@@ -33,7 +33,7 @@ const SupportPage = () => {
       .then(
         () => {
           toast({
-            title: 'Sua mensagem foi enviada com sucesso!',
+            title: 'Your message has been sent successfully!',
             status: 'success',
             duration: 3000,
             isClosable: true,
@@ -44,7 +44,7 @@ const SupportPage = () => {
         },
         (err) => {
           toast({
-            title: 'Ocorreu um erro ao enviar sua mensagem!',
+            title: 'There was an error sending your message, please try again later!',
             description: err.text,
             status: 'error',
             duration: 3000,
@@ -55,44 +55,48 @@ const SupportPage = () => {
   };
 
   return (
-    <Box p={4} maxW="600px" mx="auto">
-      <Heading mb={6} textAlign="center">
-        Suporte - Envie sua mensagem
+    <Box p={4}  minW="600px" mx="auto"  className='glass-nob'>
+      <Heading textAlign="center" fontWeight="bold" color="#2C2C2C">
+      Support 
       </Heading>
-      <VStack spacing={4} align="stretch">
+      <VStack mb={4} spacing={4} align="stretch" >
         <form id="form" onSubmit={handleSubmit}>
-          <FormControl isRequired>
-            <FormLabel>Nome</FormLabel>
+          <FormControl isRequired >
+            <FormLabel fontWeight="bold" color="#2C2C2C" >Name</FormLabel>
             <Input
+              borderColor="black"
               type="text"
               name="from_name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="Seu nome"
+              placeholder="Your name"
             />
-          </FormControl>
+          </FormControl >
           <FormControl isRequired>
-            <FormLabel>Email</FormLabel>
+            <FormLabel fontWeight="bold" color="#2C2C2C" >Email</FormLabel>
             <Input
+              borderColor="black"
               type="email"
               name="from_email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="Seu email"
+              placeholder="Your email"
             />
           </FormControl>
-          <FormControl isRequired>
-            <FormLabel>Mensagem</FormLabel>
+          <FormControl isRequired >
+            <FormLabel fontWeight="bold" color="#2C2C2C" >Message</FormLabel>
             <Textarea
+              borderColor="black"
               name="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="Sua mensagem"
+              placeholder="Your message"
               size="lg"
+              height="100px"
             />
           </FormControl>
-          <Button type="submit" colorScheme="blue">
-            Enviar Mensagem
+          <Button type="submit" color="white" bgColor="#2C2C2C" marginTop="1em">
+          Send Message
           </Button>
         </form>
       </VStack>

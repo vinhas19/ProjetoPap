@@ -105,44 +105,6 @@ body {
     height: 100%;
 }
 
-#logo-hp {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    width: 20em;
-    align-items: center;
-}
-
-#btn-hp {
-    background: #3F8E00;
-    width: 15em;
-    height: 5em;
-    cursor: pointer;
-    box-shadow: 0px 8px 20px #62BA1B;
-    color: white;
-    align-items: center;
-}
-
-#btn-tp {
-    margin-top: 7em;
-    background: #3F8E00;
-    width: 15em;
-    height: 4em;
-    cursor: pointer;
-    box-shadow: 0px 8px 20px #62BA1B;
-    color: white;
-}
-
-#btn-tp:hover {
-    background-color: #62BA1B;
-}
-
-#progress-id {
-    margin-top: 1em;
-    width: 80%;
-    border-radius: 1em;
-}
-
 #id
 {
 	background-image: url(../Assets/Images/background.png) !important;
@@ -179,10 +141,12 @@ body {
 
 .glass-nob
 {
-    background: rgba( 255, 255, 255, 0.1 ) !important;
+    background: rgba(255, 255, 255, 0.1) !important;
     box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    backdrop-filter: blur( 15px );
+    -webkit-backdrop-filter: blur( 20px );
+    
+    
 }
 
 .glass-dark
@@ -210,7 +174,7 @@ body {
 /* Estilo do botão Login */
 .login-button {
     background-color: white; 
-    color: black !important;
+    color: #2C2C2C !important;
     border: none;
     border-radius: 20px;
     padding: 10px 20px;

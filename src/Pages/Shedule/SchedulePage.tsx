@@ -20,7 +20,7 @@ const Dashboard: React.FC = () => {
   const textColor = useColorModeValue('white', 'gray.300'); // Text color for dark mode
 
   return (
-    <Flex height="100vh" bg={bgColor} color={textColor}>
+    <Flex height="100vh" width="100vh" bg={bgColor} color={textColor}>
       {/* Sidebar */}
       <Box w="30%" p={4} bg="gray.900" display="flex" flexDirection="column" justifyContent="space-between">
         {/* Logo */}
@@ -67,9 +67,6 @@ const Dashboard: React.FC = () => {
       <Box flex={1} p={8}>
         {/* Header */}
         <Flex justify="space-between" align="center" mb={8}>
-          <Text fontSize="2xl" fontWeight="bold">
-            Dashboard Overview
-          </Text>
           <HStack spacing={4}>
             <InputGroup maxW="300px">
               <InputLeftElement pointerEvents="none">

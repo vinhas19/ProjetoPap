@@ -21,6 +21,7 @@ import SupportPage from "./Pages/Support/SupportPage";
 
 
 
+
 export const App = () => (
   <ChakraProvider theme={theme}>
       <Box  id="bg" pt="1em" w="100%" h="100%" maxW="100%" maxH="100%" minH="100vh" backgroundImage={bg} backgroundRepeat="no-repeat" backgroundSize="cover">
@@ -35,6 +36,7 @@ export const App = () => (
               <Route path="/Info" element={<InfoPage/>} />
               <Route path="/Faqs" element={<FAQsPage/>} />
               <Route path="/Support" element={<SupportPage/>} />
+              
             </Routes>
           </BrowserRouter>
           <Spacer h="100%"/>

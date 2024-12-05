@@ -29,11 +29,12 @@ const Header: React.FC<BoxProps> = (props) => {
       <Box marginLeft="auto" className="user-actions">
         {isLoggedIn ? (
           <Link href="/profile" className="navigation-bar-a" _hover={{ color: 'gray.400' }}>
-            <Image src={pf} boxSize="40px" width="45px" alt="Profile" />
+            <Image src={pf} boxSize="90px" width="60px" height="60px" alt="Profile" />
           </Link>
         ) : (
           <HStack spacing={1} className="button-container">
             <Button
+              className='login-button'
               as={Link}
               href="/Sign"
               color="black"
@@ -47,6 +48,7 @@ const Header: React.FC<BoxProps> = (props) => {
               Login
             </Button>
             <Button
+              className='register-button'
               as={Link}
               href="/Sign"
               color="white"
