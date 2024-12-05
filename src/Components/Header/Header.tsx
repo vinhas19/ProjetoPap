@@ -35,7 +35,7 @@ const Header: React.FC<BoxProps> = (props) => {
           <HStack spacing={1} className="button-container">
             <Button
               as={Link}
-              href="/LoginRegister"
+              href="/Sign"
               color="black"
               bg="gray.200"
               _hover={{ bg: 'gray.300' }}
@@ -48,7 +48,7 @@ const Header: React.FC<BoxProps> = (props) => {
             </Button>
             <Button
               as={Link}
-              href="/LoginRegister"
+              href="/Sign"
               color="white"
               bg="black"
               _hover={{ bg: 'gray.800' }}
