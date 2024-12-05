@@ -33,7 +33,7 @@ const HomePage: React.FC = () => {
           {/* Botão */}
           <Button
             as={Link}
-            to="/Shedule"
+            to="/Sign"
             bg="black"
             color="white"
             _hover={{ bg: 'gray.800' }}
@@ -42,7 +42,7 @@ const HomePage: React.FC = () => {
             py={4}
             fontSize="lg"
           >
-            Schedule
+            Create an account
            
           </Button>
         </VStack>

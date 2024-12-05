@@ -9,7 +9,7 @@ const SupportPage = () => {
   const toast = useToast();
 
   // Inicialize o EmailJS com o seu User ID
-  emailjs.init('NMvxrr10fm0Hd2AEX');  // Coloque o User ID do painel do EmailJS aqui
+  emailjs.init('wZKxLB3hLzvzvbYh2');  // Coloque o User ID do painel do EmailJS aqui
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
