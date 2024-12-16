@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, Text, Heading } from '@chakra-ui/react';
+import { Box, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, Heading } from '@chakra-ui/react';
 
 const FAQsPage: React.FC = () => {
   return (

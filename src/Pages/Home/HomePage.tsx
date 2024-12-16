@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Box, Button, Text, VStack } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
 const HomePage: React.FC = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    // Verifica se o token existe no localStorage
+    const token = localStorage.getItem('token');
+    setIsLoggedIn(!!token); // Define isLoggedIn como true se o token existir
+  }, []);
+
   return (
     <motion.div
       className="page"
@@ -20,7 +28,6 @@ const HomePage: React.FC = () => {
         height="100%" // Usa toda a altura da tela
         textAlign="center"
         paddingTop="10em"
-        
       >
         <VStack spacing={6}>
           {/* Texto acima */}
@@ -28,12 +35,12 @@ const HomePage: React.FC = () => {
             Do Your Schedules
           </Text>
           <Text fontSize="2xl" fontWeight="bold" color="white">
-          Start With SmartSchedule !
+            Start With SmartSchedule!
           </Text>
-          {/* Botão */}
+          {/* Botão dinâmico */}
           <Button
             as={Link}
-            to="/Sign"
+            to={isLoggedIn ? '/Schedule' : '/Sign'} // Link muda dinamicamente
             bg="black"
             color="white"
             _hover={{ bg: 'gray.800' }}
@@ -42,8 +49,7 @@ const HomePage: React.FC = () => {
             py={4}
             fontSize="lg"
           >
-            Create an account
-           
+            {isLoggedIn ? 'Schedule' : 'Create an account'}
           </Button>
         </VStack>
       </Box>
